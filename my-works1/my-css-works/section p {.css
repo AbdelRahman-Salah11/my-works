@@ -1,0 +1,12 @@
+section p {
+    list-style: circle;
+    color: green;
+}
+
+section .hg p {
+    color: red;
+}
+
+section #hunter p {
+    color: hotpink;
+}

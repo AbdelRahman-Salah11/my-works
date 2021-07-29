@@ -1,0 +1,56 @@
+/*base style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+p{
+    padding: 20px;
+    border: 2px double red;
+    margin-bottom: 10px;
+}
+#p1{
+    background-color: rgb(164, 211, 54);
+    border: 2px double red;
+    width: 40%;
+    height: 40%;
+}
+.p2{
+    background-color: darkgoldenrod;
+    width: 110px;
+    height: 110px;
+    border: 2px double red;
+}
+#h22{
+    clear: left;
+}
+/**here is our simple work in media query**/
+/**1 (the large device)1 **/
+@media(min-width:601px) and (max-width:992px) {
+    #p1{ 
+        border: 3px solid blue;
+        padding:10px ;
+       text-align: center; 
+    }
+    .p2{
+       border:1.5px solid black;
+       text-transform: uppercase;
+       overflow: auto;
+    }
+}
+@media(max-width: 600px) , (min-width:993px){
+#p1{ 
+    border: 3px solid orchid;
+    padding:10px ;
+   text-align: center; 
+   width: 100px;
+   height: 100px;
+   float: left;
+   }
+.p2{
+   border:1px dashed pink;
+   text-transform: uppercase;
+   background-color: salmon;
+   overflow: auto;
+   }
+}

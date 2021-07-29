@@ -1,0 +1,49 @@
+/*base style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+p{
+    padding: 20px;
+    border: 2px double red;
+    margin-bottom: 10px;
+}
+#p1{
+    background-color: rgb(164, 211, 54);
+    border: 2px double red;
+    width: 70%;
+    height: 40%;
+}
+.p2{
+    background-color: darkgoldenrod;
+    width: 30%;
+    height: 20%;
+    border: 2px double red;
+}
+/**here is our simple work in media query**/
+/**1 (the large device)1 **/
+@media(min-width:990px) {
+    #p1{ 
+        border: 3px solid blue;
+        padding:10px ;
+       text-align: center; 
+    }
+    .p2{
+       border:1px dashed gold;
+       text-transform: uppercase;
+       overflow: auto;
+    }
+}
+@media(min-width: 600px) and (max-width:989.5px){
+#p1{ 
+    border: 3px solid orchid;
+    padding:10px ;
+   text-align: center; 
+   }
+.p2{
+   border:1px dashed pink;
+   text-transform: uppercase;
+   overflow: auto;
+   }
+}
